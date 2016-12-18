@@ -1,0 +1,44 @@
+{
+  "name": "mocha-emojified-reporter",
+  "version": "1.0.0",
+  "description": "Add some emoji magic to mocha",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiaanduplessis/mocha-emojified-reporter.git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/mocha-emojified-reporter",
+  "bugs": "https://github.com/tiaanduplessis/mocha-emojified-reporter/issues",
+  "author": {
+    "name": "Tiaan",
+    "email": "tiaanduplessis@hotmail.com",
+    "url": "tiaanduplessis.co.za"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "npm run lint:fix; npm run build; npm test",
+    "lint": "standard ./src/**/*.js --verbose | snazzy",
+    "lint:fix": "standard ./src/**/*.js --fix --verbose | snazzy",
+    "test": "mocha --reporter dist/index.js",
+    "watch": "chokidar '**/*' -c 'npm run start'"
+  },
+  "keywords": [
+    "mocha,",
+    "reporter",
+    "emojified",
+    "mocha-emojified-reporter"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^3.5.0",
+    "chokidar-cli": "^1.2.0",
+    "mocha": "^3.2.0",
+    "snazzy": "^5.0.0",
+    "standard": "^8.6.0"
+  }
+}
