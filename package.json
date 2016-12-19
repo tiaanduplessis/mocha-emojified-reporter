@@ -1,6 +1,6 @@
 {
   "name": "mocha-emojified-reporter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Add some emoji magic to mocha",
   "license": "MIT",
   "repository": {
@@ -14,10 +14,7 @@
     "email": "tiaanduplessis@hotmail.com",
     "url": "tiaanduplessis.co.za"
   },
-  "main": "dist/index.js",
-  "files": [
-    "index.js"
-  ],
+  "main": "index.js",
   "scripts": {
     "start": "npm run lint:fix; npm run build; npm test",
     "lint": "standard ./src/**/*.js --verbose | snazzy",
