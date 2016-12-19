@@ -16,7 +16,7 @@
   },
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "index.js"
   ],
   "scripts": {
     "start": "npm run lint:fix; npm run build; npm test",
